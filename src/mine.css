@@ -1,0 +1,605 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --primary-color: red;
+    --secondary-color:blue;
+    --hover-colors:rgb(193, 29, 29);
+    --hover-color:#29be53;
+}
+
+body{
+    overflow-x: hidden;
+
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.hideScroll::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+.page-links li a{
+    transition:all ease-in-out 300ms;
+}
+
+.page-links li a:hover{
+    color: var(--hover-colors);
+}
+
+.big-images img{
+    transition: all linear 300ms;
+}
+
+.big-images img:hover{
+    transform: scale(1.06);
+}
+
+.section-css{
+    /* max-w-[1200px] py-5 pb-14 px-5 bg-white rounded-lg mx-auto */
+    max-width: 1200px;
+    padding: 80px ;
+    padding-bottom:100px ;
+    background-color: white;
+    border-radius: 6px;
+    margin:17px auto;
+    
+}
+
+.gridFlexer{
+    display: grid;
+    grid-template-columns: minmax(auto-fill repeat(310px , 1fr));
+}
+
+.make-flex{
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.hero-section{
+    width: 100vw;
+    
+    margin-top: 45px;
+}
+
+.wider{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.heading{
+    width: 100%;
+     
+    border-bottom: 1px solid gray;
+    
+    
+}
+
+.title{
+    background-color: #29be53;
+    width: fit-content;
+    color: white;
+    padding: 10px 0;
+    padding-right: 65px;
+    padding-left: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.big-screen{
+    position: relative;
+    width: 65%;
+}
+
+.big-screen::after{
+    content: "";
+    height: 52px;
+    width: 100px;
+    background-color: #f2f2f2;
+    position: absolute;
+    
+    top: 0;
+    left: 115px;
+    transform: skewX(29deg);
+}
+
+.small-screen{
+    width: 30%;
+    
+}
+.small-screen-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.thoughts{
+    display: flex;
+    gap: 1.1rem;
+    align-items: center;
+    cursor: pointer;
+    transition: all linear 300ms;
+}
+
+.thoughts:hover{
+    color: var(--hover-color);
+}
+
+
+.small-screen-heading i{
+    font-size: 1.2rem;
+
+}
+
+.small-screen-heading h5{
+    font-size: 1.2rem;
+}
+
+.small-screen-heading .line{
+    height: 1px;
+    width: 60%;
+    background-color: black;
+}
+
+.news-images{
+    margin-top: 1.6rem;
+    
+    
+}
+
+.big-image{
+    width: 100%;
+    height: 550px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.big-image:hover img{
+    transform: scale(1.1);
+    
+}
+
+.big-image img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    transition: all ease-in-out 400ms;
+}
+
+.big-image-title{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    left: 40px;
+    bottom: 30px;
+}
+.big-image-title span{
+    padding: 10px 20px;
+    width: fit-content;
+    background-color: var(--hover-color);
+    color: white;
+    font-size: 1.4rem;
+}
+
+.big-image-title h2{
+    font-size: 2.7rem;
+    text-align: left;
+    color: white;
+    line-height: 3.8rem;
+}
+
+.big-image-title p{
+    color: rgb(164, 163, 163);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.first-one-image{
+    width: 250px;
+    display: grid;
+    row-gap: 18px;
+}
+
+.small-image-one{
+    width: 250px;
+    height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+
+
+
+
+.small-image-one img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    transition: all ease-in-out 300ms;
+    
+}
+
+.small-image-one:hover img{
+    transform: scale(1.1);
+
+}
+
+.small-image-one h4{
+    position: absolute;
+    background-color: var(--primary-color);
+    color: white;
+    z-index: 10;
+    bottom: 0px;
+    left: 0px;
+    padding:8px 0;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    
+}
+
+.first-one-image h4{
+    font-size: 1.4rem;
+    transition: all linear 300ms;
+    cursor: pointer;
+}
+.first-one-image h4:hover{
+    color: var(--hover-color);
+}
+
+.small-news-images{
+    display: grid;
+    margin: 1rem 0;
+    column-gap: 12px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+
+.donald-trump{
+    width: 100%;
+    height: 200px;
+    background-color: blue;
+    margin-top: 30px;
+}
+
+.donald-trump img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.bhahubali{
+    display: flex;
+    margin-top: 20px;
+    gap: 1rem;
+    border-bottom: 1px solid rgb(175, 175, 175);
+    padding-bottom: 1.3rem;
+}
+.bhahubali img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+.info-div h5{
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.info-div p{
+    font-size: 1rem;
+    padding-top: 10px;
+    color: var(--hover-color);
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 357px){
+    .logo-container{
+       width: 114px;
+    }
+    
+    .date{
+        font-size: 10px;
+        padding-top: 4px;
+    }
+    
+    
+}
+
+
+@media only screen and (max-width:600px) {
+    .ham-burger{
+        display: block;
+        font-size: 1.5rem;
+        color: gray;
+        cursor: pointer;
+    }
+
+    
+
+    .links .unicode{
+        order: 0;
+        gap: .5rem;
+    }
+
+    .links .unicode li a{
+        font-size: .9rem;
+    }
+
+    .links{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0 10px;
+    }
+
+
+    .img-container{
+        width: 200px;
+    }
+
+    .img-container img{
+        width: 100%;
+    }
+
+    .img-container .date{
+        font-size:3vw;
+        padding-top:10px
+    }
+
+    .links .slider{
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 13px 0 13px;
+        transition: all linear 600ms;
+        background-color: white;
+        z-index: 15;
+        
+    }
+
+    .closeNav{
+        display: block;
+        position: absolute;
+        right: 15px;
+    }
+
+    .hastags{
+        flex-wrap: wrap;
+    }
+
+
+    .make-flex{
+        flex-direction: column;
+        gap:2rem;
+    }
+
+    .big-screen{
+        width: 100vw;
+        padding:0 20px;
+    }
+    
+
+    .big-image{
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .big-image-title{
+        gap:.6rem;
+    }
+
+    .big-image-title h2{
+        font-size: 1rem;
+        text-align: left;
+        color: white;
+        line-height: 1.5rem;
+    }
+    .big-image-title span{
+        padding: 10px 20px;
+        width: fit-content;
+        background-color: var(--hover-color);
+        color: white;
+        font-size: 1.2rem;
+    }
+
+    .big-image-title p{
+        color: rgb(164, 163, 163);
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .small-news-images{
+        display: flex;
+        width: 90vw;
+        margin-left: 0;
+        margin-right: 0;
+        overflow-x: auto;
+
+        /* margin: 1rem auto;
+        gap: 12px;
+
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
+    }
+
+    .small-screen{
+        width: 100vw;
+        padding: 0 20px;
+
+    }
+
+    .bhahubali{
+        display: flex;
+        margin-top: 60px;
+        gap: 1rem;
+        border-bottom: 1px solid rgb(175, 175, 175);
+        padding-bottom: 1.3rem;
+    }
+    .first-one-image h4{
+        font-size: 1.3rem;
+    }
+
+
+
+    .info-div h5{
+        font-size: 1rem;
+    }
+
+
+    .karobar-screen{
+        width: 100vw;
+        padding:0 20px;
+    }
+
+    .karobar-screen::after{
+        content: "";
+        height: 52px;
+        width: 100px;
+        background-color: white;
+        position: absolute;
+        
+        top: 0;
+        left: 130px;
+        transform: skewX(29deg);
+    }
+
+    .karobar-area{
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .big-karobar-area{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0;
+        
+    }
+
+    .small-karobar-area{
+        width: 100vw;
+    }
+
+    .airways img{
+
+    }
+
+    .airways h5{
+        font-size: 1rem;
+        padding-top: 15px;
+    }
+
+    .maw{
+        display: flex;
+        width: 90vw;
+        
+    }
+
+    .maw h6{
+        font-size: 1rem;
+    }
+
+    .big-karobar-area .share-badyo{
+        width: 90vw;
+    }
+    .share-badyo h5{
+        font-size: 1.6rem;
+        text-align: justify;
+        transition: all ease-in-out 300ms;
+        cursor: pointer;
+    }
+
+    .gautam-buddha{
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.6rem;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .aeroplane{
+        width: 100%;
+       height: 600px;
+    }
+    .aeroplane img{
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    
+    .karobar-ad{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .social-media{
+        max-width: 100%;
+       
+        padding: 1rem;
+    }
+
+    .media{
+        display: flex;
+        justify-content: center;
+    }
+
+    .make-wider{
+        max-width: 90vw;
+        gap: 2rem;
+        
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .for-advertisement{
+        border-right:none;
+        border-left: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .my-team{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+
