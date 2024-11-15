@@ -7,7 +7,9 @@ module.exports = {
         "--green-color":"var(--green-color)",
         "--red-color":"var(--red-color)",
       },
-      
+      screens:{
+        'mobile':{'max':'400px'}
+      }
     },
   },
   plugins: [

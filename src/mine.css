@@ -26,7 +26,30 @@ body::-webkit-scrollbar{
     display: none;
 }
 
+/* close button */
+.nav-close-button{
+    display: none;
+    
+    color: black;
+    
+    
+   position: absolute;
+   right: 10px;
+   
+    
+}
 
+.nav-close-button i{
+    font-size: 20px;
+}
+
+
+
+@media only screen and (max-width:400px){
+    .nav-close-button{
+        display: block;
+    }
+}
 
 .page-links li a{
     transition:all ease-in-out 300ms;

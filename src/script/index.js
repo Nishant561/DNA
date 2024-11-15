@@ -8,7 +8,8 @@
 
 const timeContainer = document.querySelector('.time')
 const pageLinkContainer = document.querySelector('.page-links')
-
+const smallNav = document.querySelector('.smallNav')
+const faBars = document.querySelector('.fa-bars')
 const getTimer = ()=>{
     let time ;
    setInterval(()=>{ time = String(new Date().getHours()) +":" + String(new Date().getMinutes()<10? "0"+new Date().getMinutes() : new Date().getMinutes() )+":" + String(new Date().getSeconds()) },1000) 
@@ -36,13 +37,38 @@ const pageLinks = [
 "सिधाकुरा विशेष"
 ]
 
+const showNav = ()=>{
+  smallNav.style.transform = "translateX(0%)"
+}
+
+const hideNav = ()=>{
+  smallNav.style.transform = "translateX(-100%)"
+}
+
+faBars.addEventListener('click',showNav)
 
 const dynamicLinks = ()=>{
     const linklists = pageLinks.map((items)=>(
         `<li><a href="#">${items}</a></li>`
     )).join('')
+    const closeButton = document.createElement('button')
+    closeButton.textContent = "Close"
+    closeButton.classList.add('nav-close-button' ,'mobile:block')
+    
+    closeButton.innerHTML =`<i class="fa-solid fa-xmark"></i>`
+    
      pageLinkContainer.innerHTML = linklists
+
+    pageLinkContainer.appendChild(closeButton)
+
+    closeButton.addEventListener('click', hideNav);
+    
+    
+     
 }
+
+
+
 
 
 
@@ -59,7 +85,8 @@ const cardsDetails = [
     { id: 1, category: "religious", title: "ADD YOUR TITLE.", timeAdded: "a day ago.", imageSource: "../assets/images/vone.png" },
     { id: 2, category: "movies", title: "ADD YOUR TITLE.", timeAdded: "a day ago.", imageSource: "../assets/images/vtwo.png" },
     { id: 3, category: "sports", title: "ADD YOUR TITLE.", timeAdded: "a day ago.", imageSource: "../assets/images/vthree.jpg" },
-    { id: 4, category: "finance", title: "ADD YOUR TITLE.", timeAdded: "a day ago.", imageSource: "../assets/images/vfour.jpg" }
+    { id: 4, category: "finance", title: "ADD YOUR TITLE.", timeAdded: "a day ago.", imageSource: "../assets/images/vfour.jpg" },
+   
   ];
   
   const vImageContainer = document.querySelector('.add-vimages');
@@ -67,7 +94,7 @@ const cardsDetails = [
   
   const makeVerticalCards = () => {
     const cardDetails = cardsDetails.map((item) => (
-      `<div class="verticalCard relative w-[320px] overflow-hidden h-[500px]">
+      `<div class="verticalCard relative flex-shrink-0 w-[320px] overflow-hidden h-[500px]">
         <a href="#"><img src="${item.imageSource}" class="w-full object-cover object-center hover:scale-105 transition-all duration-500 h-full" /></a>
         <div style="transform: translateY(100%);" class="w-full transition-all ease-linear duration-500 pop-up p-2 pt-4 overflow-hidden absolute bottom-0 backdrop-blur-md rounded-t-lg h-[200px]">
           <a class="p-2 bg-[#29be53] text-sm text-white rounded-lg" href="#">${item.category}</a>
