@@ -6,7 +6,8 @@ module.exports = {
       colors:{
         "--green-color":"var(--green-color)",
         "--red-color":"var(--red-color)",
-      }
+      },
+      
     },
   },
   plugins: [
