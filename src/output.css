@@ -1430,6 +1430,11 @@ video {
     margin-right: 0px;
   }
 
+  .mobile\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .mobile\:mt-2 {
     margin-top: 0.5rem;
   }
@@ -1462,6 +1467,10 @@ video {
     width: 100%;
   }
 
+  .mobile\:w-\[90\%\] {
+    width: 90%;
+  }
+
   .mobile\:translate-x-\[-100\%\] {
     --tw-translate-x: -100%;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1475,8 +1484,16 @@ video {
     place-items: start;
   }
 
+  .mobile\:place-items-center {
+    place-items: center;
+  }
+
   .mobile\:gap-8 {
     gap: 2rem;
+  }
+
+  .mobile\:gap-7 {
+    gap: 1.75rem;
   }
 
   .mobile\:text-nowrap {
