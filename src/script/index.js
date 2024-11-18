@@ -85,7 +85,7 @@ const cardsDetails = [
     { id: 1, category: "religious", title: "ADD YOUR TITLE.", timeAdded: "a day ago.", imageSource: "../assets/images/vone.png" },
     { id: 2, category: "movies", title: "ADD YOUR TITLE.", timeAdded: "a day ago.", imageSource: "../assets/images/vtwo.png" },
     { id: 3, category: "sports", title: "ADD YOUR TITLE.", timeAdded: "a day ago.", imageSource: "../assets/images/vthree.jpg" },
-    { id: 4, category: "finance", title: "ADD YOUR TITLE.", timeAdded: "a day ago.", imageSource: "../assets/images/vfour.jpg" },
+   
    
   ];
   
@@ -133,7 +133,7 @@ const cardsDetails = [
 
   window.addEventListener('DOMContentLoaded',()=>{
     dynamicLinks();
-    makeVerticalCards();
+    // makeVerticalCards();
     
   })
 

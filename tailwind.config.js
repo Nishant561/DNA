@@ -8,7 +8,7 @@ module.exports = {
         "--red-color":"var(--red-color)",
       },
       screens:{
-        'mobile':{'max':'400px'}
+        'mobile':{'max':'600px'}
       }
     },
   },
