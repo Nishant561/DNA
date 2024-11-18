@@ -133,7 +133,7 @@ const cardsDetails = [
 
   window.addEventListener('DOMContentLoaded',()=>{
     dynamicLinks();
-    // makeVerticalCards();
+    makeVerticalCards();
     
   })
 

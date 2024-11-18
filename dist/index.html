@@ -29,7 +29,7 @@
 
 
     </nav>
-    <div class="links-container z-50 sticky top-0 bg-white border-t-2 w-[100vw] mt-3 mobile:py-2 mobile:px-3 mobile:bg-[color:var(--green-color)] ">
+    <div class="links-container z-50 sticky top-0 bg-white border-t-2 w-[100vw] mt-3 mobile:py-2 mobile:px-3 ">
         <i class="fa-solid text-2xl hidden cursor-pointer fa-bars mobile:block"></i>
         <div class="max-w-[1200px] smallNav transition-all ease-linear duration-300 p-4 translate-x-[0%] flex items-center mx-auto mobile:w-[100vw] mobile:p-0 mobile:m-0 mobile:py-[1rem] mobile:absolute mobile:top-0 mobile:left-0 mobile:bg-gray-100 mobile:translate-x-[-100%] mobile:rounded-b-md">
             
@@ -71,7 +71,7 @@
 
 
 
-    <section class="hero-sections w-[100vw] bg-[#9c9d9d22]  mobile:pt-[17px]  ">
+    <section class="hero-sections w-[100vw] bg-[#9c9d9d22] ">
 
         <div class="fourth-section max-w-[1200px] mb-5 py-5  px-4  mx-auto ad-section mobile:py-0">
             <div class="ad-container w-full  flex gap-5 flex-col items-center  ">
@@ -92,7 +92,7 @@
                 </p>
             </div>
 
-            <div class="big-images  overflow-hidden bg-blue-500 mt-7 h-[600px] rounded-lg  w-full mobile:w-[90%] mobile:mx-auto  mobile:h-[300px] ">
+            <div class="big-images  overflow-hidden  mt-7 h-[600px] rounded-lg  w-full mobile:w-[90%] mobile:mx-auto  mobile:h-[300px] ">
                 <img class="w-full object-cover h-full rounded-lg  cursor-pointer object-center mx-auto"
                     src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D"
                     alt="image.png" />
@@ -122,16 +122,19 @@
             </div>
         </div>
 
-        <div class="third-section mt-8  section-css py-[30px]">
-            <div class="w-[90%] items-center overflow-hidden mx-auto gap-2 flex-col flex">
+        <div class="third-section mt-8  max-w-[1200px]  pb-14 px-5 bg-white rounded-lg mx-auto py-[30px] mobile:mx-0">
+            <div class="w-[90%] items-center overflow-hidden mx-auto gap-2 flex-col flex mobile:mx-auto">
                 <a href="#"><h1 class="text-3xl font-bold pb-7 text-[color:--green-color]">समाचार</h1></a>
-                <iframe width="90%" height="500px" src="https://www.youtube.com/embed/IuedK_XpbDI?si=z_sYHUA3r5aJR1D_"
+                <div class="w-[100vw] h-[500px] mobile:h-[200px] ">
+                    <iframe width="90%" height="100%" src="https://www.youtube.com/embed/IuedK_XpbDI?si=z_sYHUA3r5aJR1D_"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <a class="hover:text-[color:--red-color]" href="#">
-                        <h1 class="text-2xl text-center pt-8 font-bold">भैरहवामा भिजिविलिटी नहुँदा पोखराबाट उडेन जहाज, रविलाई विमानबाट झारेर प्रतिक्षा कक्ष लगियो</h1>
-                    </a>
+                    
+                </div>
+                <a class="hover:text-[color:--red-color]" href="#">
+                    <h1 class="text-2xl text-center pt-8 font-bold">भैरहवामा भिजिविलिटी नहुँदा पोखराबाट उडेन जहाज, रविलाई विमानबाट झारेर प्रतिक्षा कक्ष लगियो</h1>
+                </a>
             </div>
         </div>
 
@@ -293,11 +296,13 @@
 
         
 
-        <section class="youtubeVideoLink  mt-8 max-w-[1200px] rounded-lg mx-auto bg-white py-5 px-5  ">
+        <section class="youtubeVideoLink  mt-8 max-w-[1200px] rounded-lg mx-auto bg-white h-auto py-5 px-5 mobile:w-[100vw] mobile:pt-6 mobile:mt-8 ">
             <a href="#"><h1 class="text-center  font-bold text-2xl text-[color:--green-color]">लोकप्रिय</h1></a>
-            <div class="flex justify-between py-[30px]">
-                <div class="youtubeEmbededVideo w-[60%] h-full ">
-                    <iframe width="100%" height="566" src="https://www.youtube.com/embed/YMrKaWU2TNg"
+            <div class="flex justify-between py-[30px] mobile:flex-col mobile:w-[100vw] mobile:items-center mobile:gap-8 h-auto ">
+
+
+                <div class="youtubeEmbededVideo w-[60%] h-auto mobile:w-[90%] mobile:flex mobile:flex-col mobile:items-center ">
+                    <iframe width="100%" height="500" src="https://www.youtube.com/embed/YMrKaWU2TNg"
                         
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -305,96 +310,98 @@
                 
                     <h1 class="text-2xl font-extrabold text-justify pt-8">निर्मला पन्त प्रकरण- प्रत्यक्षदर्शीले गरे पहिलो पटक सनसनीपूर्ण खुलासा, उखुबारीमा ३ जनाले के-के गरे?</h1>
                     </div>
-    
-                <div class="w-[38%]   overflow-y-auto  h-[600px]">
-                    <div class="firstVideoLink w-full flex gap-2 border-b-2 pb-4 h-[140px]  ">
-                        <div class="thubnailContainer w-[450px] h-full">
-                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YMrKaWU2TNg"
-                            title="निर्मला पन्त प्रकरण- प्रत्यक्षदर्शीले गरे पहिलो पटक सनसनीपूर्ण खुलासा, उखुबारीमा ३ जनाले के-के गरे?"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="w-[38%] mobile:w-[100vw]">
+                        <div class="w-full   overflow-y-auto  h-[600px] mobile:w-[90%] mobile:mx-auto ">
+                            <div class="firstVideoLink w-full flex gap-2 border-b-2 pb-4 h-[140px]  ">
+                                <div class="thubnailContainer w-[450px] h-full">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YMrKaWU2TNg"
+                                    title="निर्मला पन्त प्रकरण- प्रत्यक्षदर्शीले गरे पहिलो पटक सनसनीपूर्ण खुलासा, उखुबारीमा ३ जनाले के-के गरे?"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <h1 class="font-semibold text-justify">निर्मला पन्त प्रकरण- प्रत्यक्षदर्शीले गरे पहिलो पटक सनसनीपूर्ण खुलासा, उखुबारीमा ३ जनाले के-के गरे?</h1>
+                            </div>
+                            <!-- <div class="firstVideoLink w-full flex gap-2 border-b-2 pb-4 h-[140px]  ">
+                                <div class="thubnailContainer w-[450px] h-full">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YMrKaWU2TNg"
+                                    title="निर्मला पन्त प्रकरण- प्रत्यक्षदर्शीले गरे पहिलो पटक सनसनीपूर्ण खुलासा, उखुबारीमा ३ जनाले के-के गरे?"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <h1 class="font-semibold text-justify">निर्मला पन्त प्रकरण- प्रत्यक्षदर्शीले गरे पहिलो पटक सनसनीपूर्ण खुलासा, उखुबारीमा ३ जनाले के-के गरे?</h1>
+                            </div>
+                            <div class="firstVideoLink w-full flex gap-2 border-b-2 pb-4 h-[140px]  ">
+                                <div class="thubnailContainer w-[450px] h-full">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YMrKaWU2TNg"
+                                    title="निर्मला पन्त प्रकरण- प्रत्यक्षदर्शीले गरे पहिलो पटक सनसनीपूर्ण खुलासा, उखुबारीमा ३ जनाले के-के गरे?"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <h1 class="font-semibold text-justify">निर्मला पन्त प्रकरण- प्रत्यक्षदर्शीले गरे पहिलो पटक सनसनीपूर्ण खुलासा, उखुबारीमा ३ जनाले के-के गरे?</h1>
+                            </div>
+                            <div class="firstVideoLink w-full flex gap-2 border-b-2 pb-4 h-[140px]  ">
+                                <div class="thubnailContainer w-[450px] h-full">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YMrKaWU2TNg"
+                                    title="निर्मला पन्त प्रकरण- प्रत्यक्षदर्शीले गरे पहिलो पटक सनसनीपूर्ण खुलासा, उखुबारीमा ३ जनाले के-के गरे?"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <h1 class="font-semibold text-justify">निर्मला पन्त प्रकरण- प्रत्यक्षदर्शीले गरे पहिलो पटक सनसनीपूर्ण खुलासा, उखुबारीमा ३ जनाले के-के गरे?</h1>
+                            </div>
+                            <div class="firstVideoLink w-full flex gap-2 border-b-2 pb-4 h-[140px]  ">
+                                <div class="thubnailContainer w-[450px] h-full">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YMrKaWU2TNg"
+                                    title="निर्मला पन्त प्रकरण- प्रत्यक्षदर्शीले गरे पहिलो पटक सनसनीपूर्ण खुलासा, उखुबारीमा ३ जनाले के-के गरे?"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <h1 class="font-semibold text-justify">निर्मला पन्त प्रकरण- प्रत्यक्षदर्शीले गरे पहिलो पटक सनसनीपूर्ण खुलासा, उखुबारीमा ३ जनाले के-के गरे?</h1>
+                            </div>
+                            <div class="firstVideoLink w-full flex gap-2 border-b-2 pb-4 h-[140px]  ">
+                                <div class="thubnailContainer w-[450px] h-full">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YMrKaWU2TNg"
+                                    title="निर्मला पन्त प्रकरण- प्रत्यक्षदर्शीले गरे पहिलो पटक सनसनीपूर्ण खुलासा, उखुबारीमा ३ जनाले के-के गरे?"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <h1 class="font-semibold text-justify">निर्मला पन्त प्रकरण- प्रत्यक्षदर्शीले गरे पहिलो पटक सनसनीपूर्ण खुलासा, उखुबारीमा ३ जनाले के-के गरे?</h1>
+                            </div>
+                            <div class="firstVideoLink w-full flex gap-2 border-b-2 pb-4 h-[140px]  ">
+                                <div class="thubnailContainer w-[450px] h-full">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YMrKaWU2TNg"
+                                    title="निर्मला पन्त प्रकरण- प्रत्यक्षदर्शीले गरे पहिलो पटक सनसनीपूर्ण खुलासा, उखुबारीमा ३ जनाले के-के गरे?"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <h1 class="font-semibold text-justify">निर्मला पन्त प्रकरण- प्रत्यक्षदर्शीले गरे पहिलो पटक सनसनीपूर्ण खुलासा, उखुबारीमा ३ जनाले के-के गरे?</h1>
+                            </div> -->
                         </div>
-                        <h1 class="font-semibold text-justify">निर्मला पन्त प्रकरण- प्रत्यक्षदर्शीले गरे पहिलो पटक सनसनीपूर्ण खुलासा, उखुबारीमा ३ जनाले के-के गरे?</h1>
-                    </div>
-                    <div class="firstVideoLink w-full flex gap-2 border-b-2 pb-4 h-[140px]  ">
-                        <div class="thubnailContainer w-[450px] h-full">
-                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YMrKaWU2TNg"
-                            title="निर्मला पन्त प्रकरण- प्रत्यक्षदर्शीले गरे पहिलो पटक सनसनीपूर्ण खुलासा, उखुबारीमा ३ जनाले के-के गरे?"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                        <h1 class="font-semibold text-justify">निर्मला पन्त प्रकरण- प्रत्यक्षदर्शीले गरे पहिलो पटक सनसनीपूर्ण खुलासा, उखुबारीमा ३ जनाले के-के गरे?</h1>
-                    </div>
-                    <div class="firstVideoLink w-full flex gap-2 border-b-2 pb-4 h-[140px]  ">
-                        <div class="thubnailContainer w-[450px] h-full">
-                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YMrKaWU2TNg"
-                            title="निर्मला पन्त प्रकरण- प्रत्यक्षदर्शीले गरे पहिलो पटक सनसनीपूर्ण खुलासा, उखुबारीमा ३ जनाले के-के गरे?"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                        <h1 class="font-semibold text-justify">निर्मला पन्त प्रकरण- प्रत्यक्षदर्शीले गरे पहिलो पटक सनसनीपूर्ण खुलासा, उखुबारीमा ३ जनाले के-के गरे?</h1>
-                    </div>
-                    <div class="firstVideoLink w-full flex gap-2 border-b-2 pb-4 h-[140px]  ">
-                        <div class="thubnailContainer w-[450px] h-full">
-                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YMrKaWU2TNg"
-                            title="निर्मला पन्त प्रकरण- प्रत्यक्षदर्शीले गरे पहिलो पटक सनसनीपूर्ण खुलासा, उखुबारीमा ३ जनाले के-के गरे?"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                        <h1 class="font-semibold text-justify">निर्मला पन्त प्रकरण- प्रत्यक्षदर्शीले गरे पहिलो पटक सनसनीपूर्ण खुलासा, उखुबारीमा ३ जनाले के-के गरे?</h1>
-                    </div>
-                    <div class="firstVideoLink w-full flex gap-2 border-b-2 pb-4 h-[140px]  ">
-                        <div class="thubnailContainer w-[450px] h-full">
-                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YMrKaWU2TNg"
-                            title="निर्मला पन्त प्रकरण- प्रत्यक्षदर्शीले गरे पहिलो पटक सनसनीपूर्ण खुलासा, उखुबारीमा ३ जनाले के-के गरे?"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                        <h1 class="font-semibold text-justify">निर्मला पन्त प्रकरण- प्रत्यक्षदर्शीले गरे पहिलो पटक सनसनीपूर्ण खुलासा, उखुबारीमा ३ जनाले के-के गरे?</h1>
-                    </div>
-                    <div class="firstVideoLink w-full flex gap-2 border-b-2 pb-4 h-[140px]  ">
-                        <div class="thubnailContainer w-[450px] h-full">
-                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YMrKaWU2TNg"
-                            title="निर्मला पन्त प्रकरण- प्रत्यक्षदर्शीले गरे पहिलो पटक सनसनीपूर्ण खुलासा, उखुबारीमा ३ जनाले के-के गरे?"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                        <h1 class="font-semibold text-justify">निर्मला पन्त प्रकरण- प्रत्यक्षदर्शीले गरे पहिलो पटक सनसनीपूर्ण खुलासा, उखुबारीमा ३ जनाले के-के गरे?</h1>
-                    </div>
-                    <div class="firstVideoLink w-full flex gap-2 border-b-2 pb-4 h-[140px]  ">
-                        <div class="thubnailContainer w-[450px] h-full">
-                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YMrKaWU2TNg"
-                            title="निर्मला पन्त प्रकरण- प्रत्यक्षदर्शीले गरे पहिलो पटक सनसनीपूर्ण खुलासा, उखुबारीमा ३ जनाले के-के गरे?"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
-                        <h1 class="font-semibold text-justify">निर्मला पन्त प्रकरण- प्रत्यक्षदर्शीले गरे पहिलो पटक सनसनीपूर्ण खुलासा, उखुबारीमा ३ जनाले के-के गरे?</h1>
-                    </div>
-                </div>
+                    </div> 
+                
             </div>
             
         </section>
 
 
-        <section class=" mt-8 max-w-[1200px] p-4  rounded-lg mx-auto bg-white py-5 px-5">
+        <section class=" mt-8 max-w-[1200px] p-4  rounded-lg mx-auto bg-white py-5 px-5 mobile:w-[100vw]">
             <a href="#"><h1 class="w-full text-[color:--green-color] text-center font-bold text-2xl pb-6">समाचार</h1></a>
-            <div class="w-full flex justify-between">
-                <div class="w-[65%]">
-                    <div class="w-full overflow-hidden h-[500px] ">
-                        <a  href="#"><img class="w-full hover:scale-105 ease-linear duration-300 object-cover h-full object-center" src="../assets/images/first.jpg" /></a>
+            <div class="w-full flex justify-between mobile:flex-col mobile:gap-7">
+                <div class="w-[65%] mobile:w-[100vw]">
+                    <div class="w-full overflow-hidden h-[500px] mobile:h-[300px] mobile:w-[90%] ">
+                        <a  href="#"><img class="w-full hover:scale-105 ease-linear duration-300 object-cover h-full object-center mobile:object-contain" src="../assets/images/first.jpg" /></a>
                         
                     </div>
-                    <a href="#"><h1 class="text-2xl hover:text-[color:--red-color] font-bold pt-7">कालोसूचीका राज्यमन्त्री : साढे २ अर्बका योजना ओगटेर आफू सिंहदरबारमा, विकास धरापमा</h1></a>
+                    <a href="#"><h1 class="text-2xl hover:text-[color:--red-color] font-bold pt-7 mobile:text-wrap mobile:w-[90%] mobile:text-xl mobile:pt-2 mobile:px-1">कालोसूचीका राज्यमन्त्री : साढे २ अर्बका योजना ओगटेर आफू सिंहदरबारमा, विकास धरापमा</h1></a>
                 </div>
     
-                <div class="w-[32%] p-4 h-[500px] hideScroll   overflow-y-auto ">
+                <div class="w-[32%] p-4 h-[500px] hideScroll   overflow-y-auto mobile:w-[100%] ">
                     <a href="#" class="border-t-2 gap-x-5 pt-4 pb-4 grid grid-cols-2  w-full border-[color:--green-color]">
                         <div class="w-[159px] h-[105px]">
                             <img class="w-full h-full object-cover object-center" src="../assets/images/khil.jpg" />
@@ -480,7 +487,7 @@
 
         <section class="verticalCards w-[100vw] flex flex-col items-center bg-gray-200 p-4 mt-10">
             <a href="#"><h1 class="text-center  font-bold text-2xl text-[color:--green-color]">लोकप्रिय</h1></a>
-             <div class="flex add-vimages flex-wrap  pt-4 gap-5 w-[100%] bg-blue-500 justify-center "> 
+             <div class="flex add-vimages flex-wrap  pt-4 gap-5 w-[100%]  justify-center "> 
                 <div class="verticalCard relative flex-shrink-0 w-[300px] overflow-hidden h-[500px]">
                     <a href="#"><img src="../assets//images/vone.png" class="w-full object-cover object-center hover:scale-105 transition-all duration-500 h-full" /></a>
                     <div style="transform: translateY(100%);" class="w-full transition-all ease-linear duration-500 pop-up p-2 pt-4 overflow-hidden absolute bottom-0 backdrop-blur-md rounded-t-lg h-[200px]">
