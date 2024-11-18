@@ -1627,6 +1627,11 @@ video {
     padding-bottom: 1rem;
   }
 
+  .mobile\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .mobile\:pt-\[17px\] {
     padding-top: 17px;
   }
@@ -1652,8 +1657,20 @@ video {
     line-height: 1.75rem;
   }
 
+  .mobile\:text-\[15px\] {
+    font-size: 15px;
+  }
+
   .mobile\:leading-\[2\.3rem\] {
     line-height: 2.3rem;
+  }
+
+  .mobile\:text-\[xl\] {
+    color: xl;
+  }
+
+  .mobile\:text-\[1\] {
+    color: 1;
   }
 }
 
