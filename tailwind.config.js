@@ -9,13 +9,15 @@ module.exports = {
       },
       screens:{
         'mobile':{'max':'600px'}
-      }
+      },
+      aspectRatio: {
+        '4/3': '9/16',
+      },
     },
   },
   plugins: [
     "tailwindcss: {}",
     "autoprefixer: {}",
-
   ],
 
 }
