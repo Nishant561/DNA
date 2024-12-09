@@ -49,7 +49,7 @@ faBars.addEventListener('click',showNav)
 
 const dynamicLinks = ()=>{
     const linklists = pageLinks.map((items)=>(
-        `<li><a href="#">${items}</a></li>`
+        `<li><a href="#" class="md:text-xl text-[15px] text-center">${items}</a></li>`
     )).join('')
     const closeButton = document.createElement('button')
     closeButton.textContent = "Close"
